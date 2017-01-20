@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/destatalk_background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="@dimen/_2sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:id="@+id/relativeLyoutForRegister"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textColor="#cf3e3e"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:id="@+id/textviewLogin"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInputLayoutemailorphoneno"
+                    android:theme="@style/cardTheme"
+                    android:layout_below="@+id/textviewLogin">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Email or Phone No"
+                        android:id="@+id/txtemailorphoneno"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:textColor="@android:color/black"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInputLayoutpassword"
+                    android:theme="@style/cardTheme"
+                    android:layout_below="@+id/textInputLayoutemailorphoneno">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:hint="Password"
+                        android:id="@+id/txtpassword"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="@dimen/_16sdp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password ?"
+                    android:textSize="@dimen/_10sdp"
+                    android:id="@+id/lblforgetpassword"
+                    android:textColor="#cf3e3e"
+                    android:layout_below="@+id/textInputLayoutpassword"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_4sdp"/>
+
+                <Button
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="Submit"
+                    android:id="@+id/btnlogin"
+                    android:layout_below="@+id/lblforgetpassword"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#cf3e3e"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@null"/>
+
+                <Button
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="Cancel"
+                    android:id="@+id/btncancel"
+                    android:layout_below="@+id/lblforgetpassword"
+                    android:layout_toLeftOf="@+id/btnlogin"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColor="#cf3e3e"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@null"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have an account?"
+                    android:textSize="@dimen/_12sdp"
+                    android:id="@+id/lblregistertextview"
+                    android:textColor="#cf3e3e"
+                    android:layout_below="@+id/btnlogin"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_toLeftOf="@+id/lblregister"
+                    android:layout_marginRight="@dimen/_8sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textSize="@dimen/_12sdp"
+                    android:id="@+id/lblregister"
+                    android:textColor="#cf3e3e"
+                    android:layout_below="@+id/btnlogin"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
+
